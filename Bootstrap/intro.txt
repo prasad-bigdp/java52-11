@@ -1,0 +1,87 @@
+Bootstrap :Bootstrap is a css Library which is used for responsive web design. It is also component library which provides components
+
+Any Library is a Prewritten code which is used for specific purpose
+Libraries can be added to webpages using "cdn"(content Delivery Network) links
+
+How to add Bootstrap to HTML :
+    i. goto official website www.getbootstrap.com
+    ii. goto docs --> introduction --> copy css "cdn" links and paste in your HTML head
+    iii. apply the css class names and run the server
+
+Bootsrap Basic Concepts:
+   i.colors : Bootstrap by default provides some colors(8 colors)
+      primary -- blue
+      secondary --- gray
+      success -- green
+      danger -- red
+      info -- skyblue
+      warning -- yellowish orange
+      dark -- black
+      light -- white
+
+   ii. Box Model : Bootstrap can also provide box model(padding,margin,border and border-radius) with different class names below. Bootstrap always ranges sizes from 0-5.In Bootsrap 5 , left is considered as start and right is considered as end.
+   p-0  ---> padding:0px
+   px ---> padding (left and right) , py---> padding(top and bottom)
+   pt --padding-top, pb --- padding-bottom,ps --padding start(left),pe -- padding end(right)
+
+   same applies to margin with letter 'm'
+   for borders, have to specify : 'border', border-top,border-start,border-end,border-bottom, border-colors
+
+   for border radius ,have to specify : 'rounded', rounded-size, rounded-pill, rounded-circle
+
+   iii. utilities : we can replicate so many css features using class names like below:
+   float-start,float-end -- makes the element float left or right
+   text-start,text-end,text-justify,text-center -- it adjusts text(text-align)
+   fs-1 to 6  -- font size 1 to 6 (similar to h1 to h6)
+   fw-bold,bolder(font-weight),fst-italic(font-style)
+   position-static,absolute,relative,sticky,fixed  -- decides the position
+   top - size,start-size,end-size,bottom-size
+   d-- display (d-flex,d-grid,d-none,d-block,d-inline,d-inline-block,d-table)
+   lists -- list-unstyled will make list-style-type completely none
+
+   d-flex:  display-flex
+   flex-drection:flex-row/column/row-reverse/column-reverse
+   justify-content-position :justify-content-center/between/around
+   align-items-position: align-items-start/end/center
+   gap :gap 0 -5
+
+   iv. Bootstrap Layout: Boostrap Provides an automatic grid layout with 12 columns by default . we can start the layout using class name "row" 
+   and each column by class name "col" or "col-size"
+     <div class="row">
+         <p class="col">lorem</p>
+          <p class="col">lorem</p>
+     </div>
+
+   v. Boostrap Responsiveness BreakPoints:  Bootstrap have default breakpoints as below
+      without any break point            <576px
+      sm      -- small                   >=576px to <768px
+      md      -- medium                  >=768px to <992px
+      lg      -- large                   >=992px to 1200px
+      xl      -- Extra large             >=1200px to 1400px
+      xxl     -- Extra Extra Large       >=1400px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
