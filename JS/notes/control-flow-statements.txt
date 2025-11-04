@@ -1,0 +1,256 @@
+Control Flow statements in JavaScript:
+    These statements that control the flow of execution in a program based on certain conditions.
+    i. Decision Making Statements:
+        a. if statement
+        b. if...else statement
+        c. else if ladder
+        d. switch statement
+    ii. Looping Statements:
+        a. for loop
+        b. while loop
+        c. do-while loop
+
+i. Decision Making Statements: These statements allows you to execute different blocks of code based on certain conditions.
+    a. if statement: The if statement executes a block of code if a specified condition is true.
+        Syntax:
+            if (condition) {
+                // code to be executed if condition is true
+            }
+        Eg:
+            let age = 18;
+            if (age >= 18) {
+                console.log("You are eligible to vote.");
+            }
+            Output: You are eligible to vote.
+    b. if...else statement: The if...else statement executes one block of code if a condition is true, and another block of code if the condition is false.
+        Syntax:
+            if (condition) {
+                // code to be executed if condition is true
+            } else {
+                // code to be executed if condition is false
+            }
+        Eg:
+            let age = 16;
+            if (age >= 18) {
+                console.log("You are eligible to vote.");
+            } else {
+                console.log("You are not eligible to vote.");
+            }
+            Output: You are not eligible to vote.
+    c. else if ladder: The else if ladder allows you to test multiple conditions in sequence.
+        Syntax:
+            if (condition1) {
+                // code to be executed if condition1 is true
+            } else if (condition2) {
+                // code to be executed if condition2 is true
+            } else {
+                // code to be executed if both conditions are false
+            }
+    d. switch statement: The switch statement executes one block of code among many based on the value of an expression.
+        Syntax:
+            switch (expression) {
+                case value1:
+                    // code to be executed if expression equals value1
+                    break;
+                case value2:
+                    // code to be executed if expression equals value2
+                     break;
+                default:
+                    // code to be executed if expression doesn't match any case
+            }
+
+Questions:
+1. write JS code to check whether given year is leap year or not
+2. write a JS code to print day of week based on it s number (monday=1)
+3. write a JS code to generate a ramdom number between 1 to 10. user have to input number . if both mathes, user won else it prints whether user value is greater than or less than generated one
+
+Loops: Loops are used to iterate certain statements until a specific condition is false. it executes the body when condition is true and keeps on executing until the condition is false. one execution is called iteration.
+loops are basically two types
+  i. Entry control loops
+  ii. Exit control loops
+
+i. Entry control loops:  It checks the condition before executing the body(at entry point)
+Eg: while and for
+
+ii. Exit control loops : it checks the condition after executing the body(at exit point)
+eg: do while
+
+while loop: while loops is an entry control loop which contains initialization, condition and updation at three different points
+initialization;
+while(condition){
+    //body
+    updation;
+}
+eg:  //print numbers 1 to 10 in console
+     let i = 1 ; //initialization
+     while(i<=10){   //condition
+        console.log(i);
+        i++;  //updation
+     }
+
+1. write a js code to print the given name in reverse
+input : prasad 
+output: dasarp
+let n = prompt("enter any name");//prasad
+let revStr =""
+let i = n.length-1;
+while (i >=0)
+{
+    revStr = revStr+ n.charAt(i);
+    i--;
+}
+console.log(revStr)
+
+// write a js code to input a sentence and get indiviual words reverse
+input: JS is so Easy
+output: SJ si os ysaE
+
+do-while:  do while is used to iterate certain statements until the condition is false but it is an exit control loop so it checks the condition at the exit point. so, even if the condition is false, it works for one time
+initialization;
+do{
+  //statements;
+  updation;
+}while(condition);
+
+eg: print number 1 to 10 using do while
+  let n = 1;
+  do{
+    console.log(n);
+    n++;
+  }while(n<=10);
+
+  Questions : 
+  1. write JS code to check whether given number is pallindrome or not (eg: 121 is pallindrome , 152 is not pallindrome because its reverse is 251)
+
+  2. write a JS code to Print Digit Sum  of Given number until its single Digit
+  (Eg: 1975  ==> 1+9+7+5 = 22 ==>2+2 = 4)
+
+  3. Write a JS code to check and print number of vowels and spaces in given sentense (Eg: input : "JS is so easy", output : spaces :3, vowels:4 )
+
+
+For Loop : For loop is used to iterate certain statements by keeping initialization, condition and updation in single statement
+for(initialization;condition;updation){
+    //complete code
+} 
+This is also called standard for loop
+eg: // write JS code to print numbers from 1 to 20 in reverse order using for loop
+for(let i=20;i>=1;i--){
+    console.log(i)
+}
+
+
+write a JS code to Print odd numbers only from 1 to n, where n is user input number
+
+
+write JS code to print each and every element of the given array
+let arr = [20,30,50,10];
+for(let i=0;i< arr.length;i++){
+    console.log(arr[i]);
+}
+
+for...of : for ...of is default built in iterator which is used to iterate based on elements of array
+
+for(let element of array){
+    //body
+}
+
+for...in : for...in is default built in iterator which is used to iterate based on indexes of array / objects
+
+for(let index/key of array/object){
+    //body
+}
+
+
+// find sum of elements in array
+arr = [1, 2, 3, 4, 5]
+// standard for
+let sum = 0;
+for (let i = 0; i < arr.length; i++)
+{
+	sum = sum + arr[i];
+}
+console.log(sum)
+sum = 0;
+for (let e of arr){
+	sum = sum + e;
+}
+console.log(sum)
+sum = 0
+for (let e in arr) {
+	sum = sum + arr[e]
+}
+console.log(sum)
+
+
+
+
+Write a jscode to iterate  an array of elements and print their products of odd indexed numbers
+for eg: let arr = [1,2,3,4,5]
+output: 8(2*4)
+
+Questions:
+   1. Write JS Code  to accept a string and reverse it using for loop
+   2. Write a JS code to print sum of natural numbers upto n where n is user input number
+   3. write a JS code to print the factorial of given number
+   4. write a JS code to check whether given number is armstrong or not
+   (Eg: 153 = 1^3+5^3+3^3)
+
+
+Practice: 
+1. write a js code to generate random OTP of 6 digit  everytime
+2. write a basic calculator to find total price of items including GST(round upto two digits)
+                   category               tariff
+                   LUXURY                   18%
+                   MILK                     5%
+                   Insurance                0%
+                   groceries                5%
+                   electronics              12%
+Eg:  cost :12000 ,
+     category:  LUXURY
+     output: total is 12000+18% of 12000
+3. write a basic KBC quiz , only if user answer correctly ask next question, each question , double the price money starts with 1000. total 5 questions.each questions have 4 options and one is true.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+operators: These are used to perform operations on variables and values.
+  - Arithmetic Operators: +, -, *, /, %,**
+  let a = 2, b = 3;
+let sum = a + b;
+console.log(sum); //5
+console.log(a - b, a * b, a / b, a % b, a ** b)
+
+  -- Relational Operators: >,<,>=,<=,== ,===, !=,!==
+  a = 2, b = '2';
+console.log(a == b) //true
+console.log(a === b) //false it also compares datatypes
+console.log(a != b);// false
+console.log(a !== b); //true
+console.log(a>b,a<b,a>=b,a<=b)
+   -- Logical Operators : &&, ||, !
+   && -- true only if both statements are true
+   || -- true when any one of the statement is true
+   !  -- true when statement is false
+
+   Assignment operators
+    = , += ,-=,*=,/=,%= ,**=
+    a+=2  ==> a = a+2;
+
+    Increment and Decrement : These operators are used to increase or decrease the value by 1
+     a = 5
+     a++ 
+     console.log(a)  //6
+     a--
+     console.log(a)   //5
+     The increment or decremert have two variations i.e., Pre and Post
+
+     Pre -- first updates the value and then assigns the value
+     Post -- first assigns the value and then updates the value
+
+     eg: a =5;
+     let b = a++;
+     console.log(b,a) //5 6
+
+     Ternary operator: it is used to validate a condition and checks different values/statements based on condition(true/false)
+     it uses three opeands so called ternary operator. it use symbols ? and  :
+     let a = 5 ,b =10;
+     let c = (a>b) ? "Good" : "Bad" ;
+     console.log(c)
+
+     Type casting : The conversion of one data type to another datatype is called Type casting. There are two types of typecasting such as
+     i.implicit typecasting
+     ii. Explicit typecasting
+
+
+   i. implicit typecasting : it means types are converted automatically based on operations
+      eg: 5 + '4' ===> '54'  (number is converted to string)
+      5- ' 4' ===> 1  (string is converted to number)
+
+   ii. explicit typecasting: it means types are converted by force using methods like tostring() or Wrappers like Number(),String(),Boolean() etcc.,
+   '+' is also unary operator which is used to convert string to integer
+      eg: 5 + +'4'  ==>9
+      5 + Number('4')  ==> 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

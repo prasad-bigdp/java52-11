@@ -1,0 +1,21 @@
+JS BASICS
+    introduction to JS,
+    variables,
+    datatypes,
+    operators,
+    control flow,loops
+    functions,
+    Arrays and Objects
+JS DOM
+    DOM Manipulation,
+    Events,
+    Forms,
+    Local Storage
+JS ADVANCED
+    Asynchronous JavaScript,
+    Promises,
+    Fetch API,
+    Async/Await,
+    Error Handling,
+    BOM, ES6+ Features,
+    Libraries

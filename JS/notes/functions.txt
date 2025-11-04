@@ -1,0 +1,74 @@
+Functions in javascript are blocks of code designed to perform a particular task. They are executed when "called" or "invoked". Functions can take inputs, called parameters, and can return outputs.
+   functions are used for
+      -- reusable code
+      -- divide the code into smaller,logical parts
+syntax: function function_name(parameters)
+{
+    //body
+}
+functions()  //function call
+
+Eg:  create a function display which prints "hello world" in console and call it
+
+Functions parameters need not to have declarations like let,var,const as they are local variables(function scoped) and will not contain any datatypes since js is dynamically typed
+
+function sum(a,b){
+    console.log(a+b)
+}
+sum(5,3);
+
+functions can even return the values using 'return' keyword
+function sum(a,b){
+   return a+b;
+}
+let res = sum(5,3);
+console.log(res);
+
+functions can have optional parameters with default value "undefined" when its argument is not passed when invoked
+   function sum(a,b,c){
+    console.log(a,b,c)
+   }
+   sum(5,3)
+   Here a value is 5 , b value is 3 and c value is undefined
+
+we can also make these undefined with some default values like
+function sum(a,b,c=1){
+    console.log(a,b,c)
+   }
+   sum(5,3)
+   here c value will be 1 since it's not passed. it is called default parameters
+
+
+Rest parameter: In case of more values are passed and need to accept them all, we use rest parameter. it is denoted by three dots . it is always the last in parameter's list. it accepts parameters in the form of array
+  function sum(a,b,...c){
+    console.log(a,b,c)
+  }
+  sum(5,6,7,8,9,10)
+  Here a is 5 , b is 6, c is [7,8,9,10]
+
+Spread Operator: 
+   it is used to separate the array values/spread the array values. it is also denoted by three dots
+   a = [5, 4], b = [3, 6]
+c = [a, b]
+console.log(c);  // [[5,4],[3,6]]
+d = [...a, ...b]
+console.log(d);  // [5,4,3,6]
+let [e, ...f] = [5, 4, 3, 6];
+
+Questions:
+1. Write a function that checks whether give number is positive or negitive and prints it
+2. Write a function that creates short code for everyname
+for eg: short_code("Durga Prasad"). output: "DP"
+3. Write a function that accepts any number of parameters and prints their product
+4. Write a function to find factorial of given number
+eg: fact(5) , output: 120
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+Datatypes in JavaScript: 
+    JavaScript is  a dynamic typing programming languages. it means in JS, there is no fixed datatype for a variable . Based on the value it stores it changes the datatype.
+    The datatypes are divided into two types:
+       i. Primitive Datatypes
+       ii. Non -Primitive Datatypes / Reference Datatypes
+
+    i. Primitive Datatypes :These datatypes stores the value and uses only value for comparison.
+      Most widely used Primitive Datatypes are
+       number, string,boolean,undefined, null
+
+    ii. Non -Primitive Datatypes: These datatypes stores the reference with elements , also called reference datatypes
+      Most widely used Non - Primitive Datatypes are
+        functions, arrays, objects
+
+i. Primitive Datatypes :
+     number: number is the datatypes assigned to any numerical values
+     let a=2.56,b=-Infinity
+    In case of expected number but got another value, it is considered as NaN(Not a Number)
+
+    Numbers have some default functions such as
+      i.toFixed(n) : it is used to fix/rounds the number upto n decimal digits
+      ii. toPrecision(n): it is used to rounds the number upto n total digits
+      iii. toString(base): it is used to convert the given number into string of certain base
+
+    Math Methods:
+    //numbers also math methods
+console.log(Math.sqrt(16)) //4  -- square root of a number
+console.log(Math.cbrt(27)) //3  -- cube root of a number
+console.log(Math.pow(2, 3), 2**3) //8  -- power of number(a power b)
+console.log(Math.abs(-10))  //10  -- always returns positive value
+console.log(Math.ceil(1.4))//2  -- returns nearest largest integer
+console.log(Math.floor(-1.5)) //-2 -- returns nearest smallest integer
+console.log(Math.round(2.53)) //3 -- returns nearest integer
+console.log(Math.random()) // returns random value between 0 and 1
+console.log(Math.max(5,3,1,4,9)) //9 -- returns maximum value
+console.log(Math.min(5,3,1,4,9)) //1 -- returns minimum value
+
+write a JS code to PRINT random number between 1 to 6 on each time
+console.log(Math.ceil(Math.random() * 6))
+write a JS codr to PRINT random number between 7 to 14 on each time
+
+console.log(Math.round(Math.random() * 7)+7)
+console.log(Math.round((Math.random() + 1)*7))
+
+
+Questions: 
+1. Explain Datatypes in JavaScript.Explain Dynamic Datatyping
+2. Explain methods toFixed(),toPrecision() and toString()
+3. Write a JS code to print 4 digit OTP(random)
+console.log(Math.floor(Math.random()*10000))
+
+Strings : strings are used to store alphanumerical values(alphabets+numbers). strings can be represented in three ways
+  i. single or double quotes:
+     let a= 'raj';
+     console.log(typeof a) //string
+     let b = "raj"
+     console.log(typeof b) //string
+     There is no difference between single or double quotes in JavaScript. based on the usage/nested strings , we use each one
+
+  ii. backticks : usage of backticks for strings in js results dynamic strings which can print dynamic values without breaking the strings. 
+   These type of strings are also called "template literals"
+   let name="john"
+   console.log(`welcome ${name}`)
+   ${} is used to keep dynamic values/variables
+
+There are so many default functions for strings such as :
+   i. str.length --- returns the total number of characters in given string
+   ii. str.toUppercase() -- returns the uppercase converted string
+   iii. str.toLowerCase() -- returns the lowercase converted string
+   iv. str.startsWith(str1) -- returns true/false based on whether str is starting with str1 or Not
+   v. str.endsWith(str1) -- returns true/false based on whether str is ending with str1 or Not
+   vi. str.indexOf('character') -- returns index of first occurance of given character
+   vii. str.lastIndexOf('character')--returns index of last occurance of given character
+   viii. str.charAt(index) -- returns the character at specified index
+   ix. str.replace(oldstr,newstr) -- replaces first ocuurance of old string with new string
+   x. str.replaceAll(oldstr,newStr) -- replaces all occurances of old string to new string
+   xi. str.concat(str1) -- returns the concatenation of two strings (str+str1)
+   xii. str.trim()-- used to remove spaces at starting and ending of given string
+   xiii. split('delimiter') -- returns an array of values after splitting the string based on delimiter
+console.log(s.split('a')) // ["j","v","script"]
+
+// write a js code to print number of spaces in given string
+// "The JS is so easy"
+"The JS is so easy".split(" ").length - 1
+
+3. boolean: it is used to store data in true or false. true represents 1 and false represents 0
+4. undefined: 'undefined' is the value assigned to the variable which are declared but not intialized.
+ By default, JS takes all the variables and functions declarations to the top of the program called "HOISTING" . so thats why default values of those variables are 'undefined'
+
+  undefined and not defined are not same.'not defined' is an error to non existant variable
+
+5. null: null is the value of variable's ending. it is intentional absence of value. whenever we want to give variable with no value, we can declare them as 'null'
+
+Questions: 
+   1. what is template literal? explain with an example?
+   2. write a js code to print number of letter 'p' in given sentence
+   'Poppins popup at popeye's hand'
+   3. what is the difference between null and undefined?
+   4. what is HOISTING?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

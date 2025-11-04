@@ -1,0 +1,101 @@
+/* transitions */
+.get-started-button{
+   /* transition: property time timing-function;*/
+   transition: background-color 2s ease;
+}
+
+.get-started-button:hover{
+    background-color: green;
+}
+.title{
+    transition: all 0.5s ease;
+}
+.title:hover{
+ transform: skew(120deg);
+}
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    animation: disco 1s ease alternate infinite;
+}
+
+@keyframes disco {
+    0%{
+        /* background-color: red; */
+        transform: translateX(0px);
+
+    }
+    50%{
+         transform: translateY(400px);
+       background-color: blue;
+       border-radius: 50%;
+    }
+    100%{
+       transform: translateX(800px);
+       background-color: green;
+    }
+}
+
+
+
+
+
+
+.heart{
+    animation: fallDown 2s ease-in alternate infinite;
+}
+@keyframes fallDown {
+    100%{
+        transform: translateY(100vh);
+    }
+}
+.heart2{
+    animation-delay: 0.2s;
+}
+.heart3{
+    animation-delay: 0.4s;
+}
+.heart4{
+    animation-delay: 0.6s;
+}
+.heart5{
+    animation-delay: 0.8s;
+}
+.heart6{
+    animation-delay: 1.0s;
+}
+.heart7{
+    animation-delay: 1.2s;
+}
+.heart8{
+    animation-delay: 1.4s;
+}
+.heart9{
+    animation-delay: 1.6s;
+}
+.heart10{
+    animation-delay: 1.8s;
+}
+
+
+
+
+
+
+
+
+.features{
+    grid-template-columns: repeat(3,1fr);
+}
+
+@media (max-width:576px){
+  .features{
+      grid-template-columns:repeat(1,1fr);
+  }
+}
+@media (min-width:577px) and (max-width:768px){
+     .features{
+      grid-template-columns:repeat(2,1fr);
+  }
+}

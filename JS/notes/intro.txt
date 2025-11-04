@@ -1,0 +1,92 @@
+Javascript: Javascript is a high level,  interpreted programming language which is used to make web pages more interactive and dynamic. it adds functionality or behaviour to web pages.
+Javascript is a synchronous and single threaded language.synchronous means it runs line by line. single threaded means one task at a time
+
+Javascript can be client side(browser based) or server side(nodejs). we will discuss here browser based.
+
+Every Browser contains an engine called "JS Engine" which runs javascript. For google chrome, js engine is v8
+
+History:
+ In 1995, Breden Eich of Netscape developed a programming language combining the features of java and python  called "livescript". it was initially "livescript" but to aquire the popularity of "JAVA", renamed as "javascript". 
+ Later multiple browser brought different scripts such as JScript,bscript,coffeescript etc.., The standards were passed to all browser to maintain similar script , "standard javascript". The rules and standard are maintained by ECMASCRIPT. The recent version of JS is "ES15"
+
+   There are lot of other technologies or libraries that are popular to make 
+JS more easy. They are JQuery, React,Angular,Vue, backbone,Next,Nest,Express,node etc..,
+
+How to include JS into HTML?
+   JS can be included to HTML using two ways 
+   i. internal Javascript : it is used to add JS to HTML within "script" element
+
+   ii. External Javascript : it is used to add external JS into HTML using "script" element with "src" attribute
+   <script src="path"></script>
+
+
+we can debug JS code using console. 'console' is part of the browser developer tools which are used to debug and understand the web page well.
+'console' can run JS . so, initially will print in console until JS basic were done.
+
+comments in Javascript : 
+   In Javascript, There are two types of comments such as
+   single line comments : // comments followed by by double slash
+   multiline comments : comments with /* and */
+eg : /* this
+  is a 
+  multi line comment */
+
+variables in Javascript: variables or Identifiers are used to assign/store different values. They are defined using "var" ,"let" and "const"
+var : var is a function scoped variable which is used throught the function. it can be redeclared, reassigned and also can be used before declaration
+it is old way of declaring variables in javascript
+console.log(a);
+//using var
+var a = 25;
+console.log(a);
+var a = 16; //redeclared
+a = 50; //reasssign
+console.log(a)
+
+let and const : let and const are block scoped variables. They can be used only in the block. They cannot be redeclared and are not possible to access before declaration. let can reassign but const cannot.
+
+//console.log(c) //error
+//using let and const
+let b = 10;
+console.log(b);
+b = 20;
+console.log(b)
+const c = 20;
+// c = 30; constant variable cannot be changed
+// const c = 50; //error
+
+
+Basic Functions in JS : 
+There are three basic functions default provided by Browser are
+   i. alert() : it is used to show an alert message
+      alert("some message");
+   
+   ii. confirm() : it is used to get confirmation from user and returns true or false
+      confirm("Are you sure?")
+
+   iii. Prompt() : it is used to get user Input . it always receives them as string
+      prompt("enter data")
+
+
+
+Questions: 
+1. what is the difference between var,let and const
+2. Explain the use and advantages of Javascript
+3. Write a javascript code to print multiplication of two numbers in internal and external JS (both)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
