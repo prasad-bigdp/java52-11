@@ -1,0 +1,32 @@
+Arrays:Arrays are used to store a collection of elements.it stores each element with an index value(reference value). Always arrays index starts with 0
+eg: let arr = [5,6,7,8]
+ ----------------
+ |5 | 6 | 7 | 8 |    ---> Elements
+ ----------------
+  0   1   2   3     ---> indexes 
+
+  Arrays are mutable(operations on arrays might change the original array).
+  Default methods in arrays are:
+  length -- it is used to find the total elements in array
+  arr.length; 
+  if last index is 100, length will become 101.
+  indexOf('ele')  -- returns the index of first occurance of given element
+  lastIndexOf('ele') -- returns the index of last occurance of given element
+  push(elements) -- it is used to add elements at the end of the array
+  pop() -- it is used to remove the last element
+  unshift(elements) -- it is used to add elements at the starting of the array
+  shift() -- it is used to remove the starting element/first element
+  splice(starting_index_number,deleteCount,inserting_elements) -- it starts from specific index and deletes based on count(or all if it is not present).also adds elements at specific index
+  let friends = ["sheldon","ross","rachel","pheobe","chandler","penny"];
+   ---  remove "penny" and add "monica"
+   ---  remove "sheldon" and add "joey"
+   ---  add "emma" between "ross" and "rachel"
+friends.pop();friends.push("monica")
+friends.shift();friends.unshift("joey")
+friends.splice(2,0,"emma")
+
+
+
+
+
+

@@ -6,7 +6,7 @@ syntax: function function_name(parameters)
 {
     //body
 }
-functions()  //function call
+function_name(arguments)  //function call
 
 Eg:  create a function display which prints "hello world" in console and call it
 
@@ -62,6 +62,103 @@ for eg: short_code("Durga Prasad"). output: "DP"
 3. Write a function that accepts any number of parameters and prints their product
 4. Write a function to find factorial of given number
 eg: fact(5) , output: 120
+
+
+Functions can be defined in multiple ways in javascript
+1. normal function declaration
+   function sum(a,b){
+    return a+b;
+   }
+2. function expression
+   let sum = function(a,b){
+    return a+b;
+   }
+3. arrow function (ES6 feature)
+   let sum = (a,b) => {
+    return a+b;
+   }
+if there is only one statement in arrow function body, we can skip the curly braces and return keyword
+   let sum = (a,b) => a+b;
+//convert below functions into function expressions and arrow functions
+i. function mul(a,b){
+   return a*b
+}
+const mul2 = function(a,b){
+   return a*b
+}
+const mul3 = (a,b) => a*b
+2. function area(r){
+   return Math.PI*r*r*;
+}
+const area3 = function(r){return Math.PI*r*r*;}
+const area2 = (r) =>Math.PI*r*r*;
+3. function add(a){
+   return function add2(b){
+      return a+b
+   }
+}
+const add1 = function(a){
+   const add2 = function(b){
+      return a*b
+   }
+   return add2
+}
+
+const add3 = (a) => (b)=> a*b;
+
+callbacks : callback function is a function that is passed to another function as a parameter. The function that receives another function is called Higher Order Function
+function_name(another_function_name);
+eg: function mad ()
+{
+    console.log("it is mad")
+}
+function simple (a)
+{
+    console.log("it is simple")  
+    a();
+}
+simple(mad)
+
+callbacks can be used for asynchrnous Operations(any Operations that doesn't execute immediately)
+
+
+closure : if one function nested in another function, the inner function remembers, the outer function value even after outer function execution ended is called closure
+function Outer ()
+{
+    let x = 5;
+    function inner ()
+    {
+        x++;
+        console.log(x)
+    }
+    return inner;
+}
+let z = Outer();
+z() //6
+z() //7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
