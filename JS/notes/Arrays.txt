@@ -25,6 +25,71 @@ friends.pop();friends.push("monica")
 friends.shift();friends.unshift("joey")
 friends.splice(2,0,"emma")
 
+ForEach(callback) : it is used to iterate each and every element of the array and pass element and index to the callback function. ForEach is a void function so, it cannot return the values
+   arrayName.ForEach(callback function(element,index){
+      //body
+   })
+
+map(callback) :  it is also used similarly as forEach but it returns values for every element of given array
+ arrayName.map(callback function(element,index){
+      //body
+   })
+
+filter(callback): it is also used similar to map but it returns only the element with return condition 'true'
+ arrayName.filter(callback function(element,index){
+      //body
+   })
+
+includes : includes is used to check whether given element is existed in the array or not. if it is existed , it will return true else false
+    let x = arr.includes("prasad")
+
+find(callback) : it is used to check the first elements that satisfies the return condition and returns it
+   Arrayname.find(function(ele,ind){
+        //logic
+     })
+findIndex(callback): it is used to check the first elements that satisfies the return condition and returns the index
+   Arrayname.findIndex(function(ele,ind){
+        //logic
+     })
+some(callback) : it is used to check atleast one of the element satisfies the return condition and return true/false based on it.
+   Arrayname.some(function(ele,ind){
+        //logic
+     })
+Every(callback) : it is used to check whether every element of array satisfies the condition or not and return true/false based on it.
+    Arrayname.Every(function(ele,ind){
+        //logic
+     })
+sort(callback): sort is used to sort based alphabetical order but in case of number we can pass callback. it follows bubble sort kind of technique and it the callback returns negitive it moves forwards, else it swaps the elements and continues
+    ascending order : arr.sort((a,b)=>a-b)
+    descending order : arr.sort((a,b)=>b-a)
+reduce(callback,initial_value):  reduce is used to apply accumulated logic such as adding or multiplying values with their previous one
+     arr.reduce(function(prev,curr){
+         //logic
+      },initialvalue)
+   
+Questions:
+let arr = [5,4,8,7,9,2,3]
+  1. Print all the elements which are greater than 7 in given array. 
+  2. Return and print only the elements which are odd in given array
+  3. Write different ways to multiply all elements of array using foreach, map, reduce
+  4. for given product prices array , give 20% discount to all products and return their new prices
+      prices = [500,200,250,110,196];
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
