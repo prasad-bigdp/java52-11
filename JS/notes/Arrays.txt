@@ -67,14 +67,49 @@ reduce(callback,initial_value):  reduce is used to apply accumulated logic such 
          //logic
       },initialvalue)
    
-Questions:
-let arr = [5,4,8,7,9,2,3]
-  1. Print all the elements which are greater than 7 in given array. 
-  2. Return and print only the elements which are odd in given array
-  3. Write different ways to multiply all elements of array using foreach, map, reduce
-  4. for given product prices array , give 20% discount to all products and return their new prices
-      prices = [500,200,250,110,196];
-   
+
+
+Object: object is a real time entity . object contains properties and methods.
+     let student= {
+          name:"ghjdgf"
+          email:"dhjgbdf"
+          id:23
+          mobno:22154,
+          fun:function(){
+            console.log("hi")
+          }
+          }  
+
+     console.log(obj.name ,  obj['name'])
+
+objects can even have methods and those methods need to be called using only that object.The current calling object in methods is represented by 'this' keyword(arrow functions cannot have this)
+    let obj = {name:"raj",age:35,fun:function(){console.log("hi"+this.name)}}
+   obj.fun(); //hi raj
+Object methods : object have many methods such as
+i. Object.keys(objectname) -- iterates all the object keys
+ii. Object.values(obj)  -- iterates all the object values
+iii. Object.seal(objectname) -- with this we cannot add / delete object properties but can modify the properties
+iv. Object.freeze(objectname) -- with this we cannot add/delete/update the properties
+v. Object.assign(objectname) -- with this we can assign values of one object to another object
+vi. Object.create(objectname) -- it is used to create an object with a reference of another object
+They are are connected by 'prototype'. it provide a default way for child object to call parent objects properties called "Prototype inheritance"
+
+when data is passing between client and server, we need to convert them as JSON(Javascript Object Notation).
+To convert object to JSON
+JSON.stringify(objectname)
+
+To convert JSON to object
+JSON.parse(jsonname)
+
+
+
+
+
+
+
+
+
+
 
 
 

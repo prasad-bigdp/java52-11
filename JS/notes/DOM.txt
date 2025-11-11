@@ -1,0 +1,22 @@
+Document Object Model:
+     Browser creates an object called document which contains complete HTML and CSS. it will be presented to screens. using this object, we can manipulate HTML & CSS in javascript
+     eg : //HTML
+     <h1 id="head">Hello world</h1>
+     //javascript
+     const ele = document.getElementById('head')
+     ele.textContent = "Bye World"
+
+     task : take a paragraph with value 10  and update it to 11
+     <p id="para">12</p>
+
+     const s = document.getElementById('para')
+     let c = s.textContent
+     s.textContent = ++c;
+
+DOM Selection : we can select an element using 5 ways
+   document.getElementsByTagname('tagname'): it selects all elements of specific tagname and returns an array
+   document.getElementsByClassname('classname'):it also selects all elements of specific class and returns an array
+   document.getElementById('idname'): it selects element with specific id and return the element
+   document.querySelector('query'): it selects an element which first satisfies the query and returns the element.
+   document.querySelectorAll('query): it selects
+   all elements that satisfies the query
