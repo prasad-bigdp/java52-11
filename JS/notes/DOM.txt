@@ -20,3 +20,22 @@ DOM Selection : we can select an element using 5 ways
    document.querySelector('query'): it selects an element which first satisfies the query and returns the element.
    document.querySelectorAll('query): it selects
    all elements that satisfies the query
+
+DOM Manipulation : it is used to manipulate elements using document object
+   element.textContent  ---> it is used to update text inside the elements
+   element.innerText  ---> it is similar to text content but it also observes 
+   CSS. it will not accept the display:none in CSS
+   element.innerHTML  ---> it is used to update HTML inside the element
+   element.className ---> it is used to provide a single class name to 
+   elements
+   element.classList  --> it is used to add /remove/toggle the classnames to
+   element
+   element.style ---> it is used to trigger CSS styles of element and 
+   manipulate them
+
+DOM creation : it is used add/create elements to DOM. we can methods below like
+    createElement('elementName') -- it is used to create the element
+    appendChild(element)  -- it is used to add the elements
+    append(elements) -- it is used to add elements
+
+    

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        *{
+            transition: all 2s ease;
+            position: relative;
+        }
+        #modal{
+            height: 300px;
+            width: 300px;
+            background: #000;
+            color: white;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;justify-content: center;align-items: center;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="modal">
+        Don't copy or paste
+    </div>
+    <button onclick="fun()">click me</button>
+    <button ondblclick="fun()">double click me</button>
+    <button id="btn">just hover me</button>
+    <script src="./script.js"></script>
+</body>
+</html>
